@@ -28,6 +28,8 @@ import Landing from "views/examples/Landing.js";
 import Login from "views/examples/Login.js";
 import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
+import Agree from "views/examples/Agree.js";
+import AboutUs from "views/examples/AboutUs.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -40,6 +42,8 @@ root.render(
       <Route path="/profile-page" exact element={<Profile />}/>
       <Route path="/register-page" exact element={<Register />}/>
       <Route path="*" element={<Navigate to="/" replace />} /> 
+      <Route path="/agree-page" element={<Agree/>} /> 
+      <Route path="/about-us-page" element={<AboutUs/>} /> 
     </Routes>
   </BrowserRouter>
 );

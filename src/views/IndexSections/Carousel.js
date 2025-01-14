@@ -18,7 +18,7 @@
 import React from "react";
 
 // reactstrap components
-import { Button, Container, Row, Col, UncontrolledCarousel } from "reactstrap";
+import { Container, Row, Col, UncontrolledCarousel } from "reactstrap";
 
 const items = [
   {
@@ -40,32 +40,21 @@ class Carousel extends React.Component {
     return (
       <>
         <section className="section section-shaped">
-          <div className="shape shape-style-1 shape-default">
+          <div className="shape shape-style-1 shape-primary">
+            {/* <span />
             <span />
             <span />
             <span />
             <span />
-            <span />
-            <span />
+            <span /> */}
           </div>
           <Container className="py-md">
             <Row className="justify-content-between align-items-center">
               <Col className="mb-5 mb-lg-0" lg="5">
                 <h1 className="text-white font-weight-light">
-                  Bootstrap carousel
+                  서비스를 소개하는 내용 Blah Blah 옆에는 모자이크 전 사진과 모자이크 후 사진 넣기
                 </h1>
-                <p className="lead text-white mt-4">
-                  Argon Design System comes with four pre-built pages to help
-                  you get started faster. You can change the text and images and
-                  you're good to go.
-                </p>
-                <Button
-                  className="btn-white mt-4"
-                  color="default"
-                  href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?ref=adsr-landing-page"
-                >
-                  See all components
-                </Button>
+             
               </Col>
               <Col className="mb-lg-auto" lg="6">
                 <div className="rounded shadow-lg overflow-hidden transform-perspective-right">
@@ -84,7 +73,6 @@ class Carousel extends React.Component {
               x="0"
               y="0"
             >
-              <polygon className="fill-white" points="2560 0 2560 100 0 100" />
             </svg>
           </div>
         </section>

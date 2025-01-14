@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, {useRef} from "react";
 
 // reactstrap components
 import { Container, Row } from "reactstrap";
@@ -45,20 +45,39 @@ import Carousel from "./IndexSections/Carousel.js";
 import Icons from "./IndexSections/Icons.js";
 import Login from "./IndexSections/Login.js";
 import Download from "./IndexSections/Download.js";
+import SimpleFooter from "components/Footers/SimpleFooter.js";
 
 class Index extends React.Component {
+  constructor(props) {
+    super(props);
+    // Tabs에 대한 참조 생성
+    this.tabsRef = React.createRef();
+  }
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;
   }
+  scrollToTabs = () => {
+    if (this.tabsRef.current) {
+      this.tabsRef.current.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  };
   render() {
     return (
       <>
         <DemoNavbar />
-        <main ref="main">
-          <Hero />
-          <Buttons />
+        <main ref="main" >
+          <Hero onScrollToTabs={this.scrollToTabs}/>
+          <div style={{ marginTop: "50px" }}>
+            <Carousel />
+          </div>
+          <div ref={this.tabsRef}>
+          <Tabs />
+          </div>
+          {/* <Buttons />
           <Inputs />
           <section className="section">
             <Container>
@@ -88,9 +107,11 @@ class Index extends React.Component {
           <Carousel />
           <Icons />
           <Login />
-          <Download />
+          <Download /> */}
         </main>
-        <CardsFooter />
+        <div style={{ marginTop: "100px" }}>
+        <SimpleFooter />
+        </div>
       </>
     );
   }

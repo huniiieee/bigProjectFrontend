@@ -94,7 +94,7 @@ class DemoNavbar extends React.Component {
                       <Link to="/">
                         <img
                           alt="..."
-                          src={require("assets/img/brand/mozit.png")}
+                          src={require("assets/img/brand/mozit2.png")}
                         />
                       </Link>
                     </Col>
@@ -108,11 +108,8 @@ class DemoNavbar extends React.Component {
                 </div>
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                   <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
-                      <i className="ni ni-ui-04 d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">About us</span>
-                    </DropdownToggle>
-                    <DropdownMenu className="dropdown-menu-xl">
+                    <a className="nav-link-inner--text" href="/about-us-page" style={{color: '#fff'}}>About us</a>
+                    {/* <DropdownMenu className="dropdown-menu-xl">
                       <div className="dropdown-menu-inner">
                         <Media
                           className="d-flex align-items-center"
@@ -169,7 +166,7 @@ class DemoNavbar extends React.Component {
                           </Media>
                         </Media>
                       </div>
-                    </DropdownMenu>
+                    </DropdownMenu> */}
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
@@ -277,7 +274,6 @@ class DemoNavbar extends React.Component {
                       className="btn-neutral btn-icon"
                       color="default"
                       href="/login-page"
-                      target="_blank"
                     >
                       {/* <span className="btn-inner--icon">
                         <i className="fa fa-cloud-download mr-2" />
@@ -291,8 +287,7 @@ class DemoNavbar extends React.Component {
                     <Button
                       className="btn-neutral btn-icon"
                       color="default"
-                      href="/register-page"
-                      target="_blank"
+                      href="/agree-page"
                     >
                       {/* <span className="btn-inner--icon">
                         <i className="fa fa-cloud-download mr-2" />

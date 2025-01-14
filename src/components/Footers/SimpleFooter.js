@@ -33,9 +33,9 @@ class SimpleFooter extends React.Component {
   render() {
     return (
       <>
-        <footer className=" footer">
+        <footer className=" footer" >
           <Container>
-            <Row className=" row-grid align-items-center mb-5">
+            <Row className=" row-grid align-items-center  mb-5">
               <Col lg="6">
                 <h3 className=" text-primary font-weight-light mb-2">
                   Thank you for supporting us!
