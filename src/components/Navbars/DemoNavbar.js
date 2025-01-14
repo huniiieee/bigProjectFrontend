@@ -75,7 +75,7 @@ class DemoNavbar extends React.Component {
               <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
                 <img
                   alt="..."
-                  src={require("assets/img/brand/mozit.png")}
+                  src={require("assets/img/brand/mozit1.png")}
                 />
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global">
@@ -94,7 +94,7 @@ class DemoNavbar extends React.Component {
                       <Link to="/">
                         <img
                           alt="..."
-                          src={require("assets/img/brand/mozit2.png")}
+                          src={require("assets/img/brand/mozit1.png")}
                         />
                       </Link>
                     </Col>
@@ -110,7 +110,7 @@ class DemoNavbar extends React.Component {
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="ni ni-ui-04 d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">Components</span>
+                      <span className="nav-link-inner--text">About us</span>
                     </DropdownToggle>
                     <DropdownMenu className="dropdown-menu-xl">
                       <div className="dropdown-menu-inner">
@@ -174,20 +174,35 @@ class DemoNavbar extends React.Component {
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="ni ni-collection d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">Examples</span>
+                      <span className="nav-link-inner--text">공지사항</span>
+                    </DropdownToggle>
+                  </UncontrolledDropdown>
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle nav>
+                      <i className="ni ni-collection d-lg-none mr-1" />
+                      <span className="nav-link-inner--text">FAQ</span>
+                    </DropdownToggle>
+                  </UncontrolledDropdown>
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle nav>
+                      <i className="ni ni-collection d-lg-none mr-1" />
+                      <span className="nav-link-inner--text">문의하기</span>
+                    </DropdownToggle>
+                  </UncontrolledDropdown>
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle nav>
+                      <i className="ni ni-collection d-lg-none mr-1" />
+                      <span className="nav-link-inner--text">작업</span>
                     </DropdownToggle>
                     <DropdownMenu>
                       <DropdownItem to="/landing-page" tag={Link}>
-                        Landing
+                        동영상
                       </DropdownItem>
                       <DropdownItem to="/profile-page" tag={Link}>
-                        Profile
+                        라이브
                       </DropdownItem>
                       <DropdownItem to="/login-page" tag={Link}>
-                        Login
-                      </DropdownItem>
-                      <DropdownItem to="/register-page" tag={Link}>
-                        Register
+                        사진
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
